@@ -20,24 +20,59 @@
             <RowDefinition/>
             <RowDefinition/>
         </Grid.RowDefinitions>
-        <TextBlock Text="?" Grid.Column="0" FontSize="36" HorizontalAlignment="Center" VerticalAlignment="Center" />
-        <TextBlock Text="?" Grid.Column="1" FontSize="36" HorizontalAlignment="Center" VerticalAlignment="Center" />
-        <TextBlock Text="?" Grid.Column="2" FontSize="36" HorizontalAlignment="Center" VerticalAlignment="Center" />
-        <TextBlock Text="?" Grid.Column="3" FontSize="36" HorizontalAlignment="Center" VerticalAlignment="Center" />
+        <Grid Style="{StaticResource GridwithAnimals}" MouseDown="TextBlock_MouseDown" MouseUp="TextBlock_MouseUp">
+            <TextBlock Style="{StaticResource txtBlockStyle}" />
+        </Grid>
+        <Grid Style="{StaticResource GridwithAnimals}" MouseDown="TextBlock_MouseDown" MouseUp="TextBlock_MouseUp" Grid.Column="1" >
+            <TextBlock Style="{StaticResource txtBlockStyle}" />
+        </Grid>
+        <Grid Style="{StaticResource GridwithAnimals}" MouseDown="TextBlock_MouseDown" MouseUp="TextBlock_MouseUp" Grid.Column="2" >
+            <TextBlock Style="{StaticResource txtBlockStyle}" />
+        </Grid>
+        <Grid Style="{StaticResource GridwithAnimals}" MouseDown="TextBlock_MouseDown" MouseUp="TextBlock_MouseUp" Grid.Column="3" >
+            <TextBlock Style="{StaticResource txtBlockStyle}" />
+        </Grid>
 
-        <TextBlock Text="?" Grid.Row="1" Grid.Column="0" FontSize="36" HorizontalAlignment="Center" VerticalAlignment="Center" />
-        <TextBlock Text="?" Grid.Row="1" Grid.Column="1" FontSize="36" HorizontalAlignment="Center" VerticalAlignment="Center" />
-        <TextBlock Text="?" Grid.Row="1" Grid.Column="2" FontSize="36" HorizontalAlignment="Center" VerticalAlignment="Center" />
-        <TextBlock Text="?" Grid.Row="1" Grid.Column="3" FontSize="36" HorizontalAlignment="Center" VerticalAlignment="Center" />
+        <Grid Style="{StaticResource GridwithAnimals}" MouseDown="TextBlock_MouseDown" MouseUp="TextBlock_MouseUp" Grid.Row="1">
+            <TextBlock Style="{StaticResource txtBlockStyle}" />
+        </Grid>
+        <Grid Style="{StaticResource GridwithAnimals}" MouseDown="TextBlock_MouseDown" MouseUp="TextBlock_MouseUp" Grid.Row="1" Grid.Column="1" >
+            <TextBlock Style="{StaticResource txtBlockStyle}" />
+        </Grid>
+        <Grid Style="{StaticResource GridwithAnimals}" MouseDown="TextBlock_MouseDown" MouseUp="TextBlock_MouseUp" Grid.Row="1" Grid.Column="2" >
+            <TextBlock Style="{StaticResource txtBlockStyle}" />
+        </Grid>
+        <Grid Style="{StaticResource GridwithAnimals}" MouseDown="TextBlock_MouseDown" MouseUp="TextBlock_MouseUp" Grid.Row="1" Grid.Column="3" >
+            <TextBlock Style="{StaticResource txtBlockStyle}" />
+        </Grid>
 
-        <TextBlock Text="?" Grid.Row="2" Grid.Column="0" FontSize="36" HorizontalAlignment="Center" VerticalAlignment="Center" />
-        <TextBlock Text="?" Grid.Row="2" Grid.Column="1" FontSize="36" HorizontalAlignment="Center" VerticalAlignment="Center" />
-        <TextBlock Text="?" Grid.Row="2" Grid.Column="2" FontSize="36" HorizontalAlignment="Center" VerticalAlignment="Center" />
-        <TextBlock Text="?" Grid.Row="2" Grid.Column="3" FontSize="36" HorizontalAlignment="Center" VerticalAlignment="Center" />
+        <Grid Style="{StaticResource GridwithAnimals}" MouseDown="TextBlock_MouseDown" MouseUp="TextBlock_MouseUp" Grid.Row="2" >
+            <TextBlock Style="{StaticResource txtBlockStyle}" />
+        </Grid>
+        <Grid Style="{StaticResource GridwithAnimals}" MouseDown="TextBlock_MouseDown" MouseUp="TextBlock_MouseUp" Grid.Row="2" Grid.Column="1" >
+            <TextBlock Style="{StaticResource txtBlockStyle}" />
+        </Grid>
+        <Grid Style="{StaticResource GridwithAnimals}" MouseDown="TextBlock_MouseDown" MouseUp="TextBlock_MouseUp" Grid.Row="2" Grid.Column="2" >
+            <TextBlock Style="{StaticResource txtBlockStyle}" />
+        </Grid>
+        <Grid Style="{StaticResource GridwithAnimals}" MouseDown="TextBlock_MouseDown" MouseUp="TextBlock_MouseUp" Grid.Row="2" Grid.Column="3" >
+            <TextBlock Style="{StaticResource txtBlockStyle}" />
+        </Grid>
 
-        <TextBlock Text="?" Grid.Row="3" Grid.Column="0" FontSize="36" HorizontalAlignment="Center" VerticalAlignment="Center" />
-        <TextBlock Text="?" Grid.Row="3" Grid.Column="1" FontSize="36" HorizontalAlignment="Center" VerticalAlignment="Center" />
-        <TextBlock Text="?" Grid.Row="3" Grid.Column="2" FontSize="36" HorizontalAlignment="Center" VerticalAlignment="Center" />
-        <TextBlock Text="?" Grid.Row="3" Grid.Column="30" FontSize="36" HorizontalAlignment="Center" VerticalAlignment="Center" />
+        <Grid Style="{StaticResource GridwithAnimals}" MouseDown="TextBlock_MouseDown" MouseUp="TextBlock_MouseUp" Grid.Row="3">
+            <TextBlock Style="{StaticResource txtBlockStyle}" />
+        </Grid>
+        <Grid Style="{StaticResource GridwithAnimals}" MouseDown="TextBlock_MouseDown" MouseUp="TextBlock_MouseUp" Grid.Row="3" Grid.Column="1" >
+            <TextBlock Style="{StaticResource txtBlockStyle}" />
+        </Grid>
+        <Grid Style="{StaticResource GridwithAnimals}" MouseDown="TextBlock_MouseDown" MouseUp="TextBlock_MouseUp" Grid.Row="3" Grid.Column="2" >
+            <TextBlock Style="{StaticResource txtBlockStyle}" />
+        </Grid>
+        <Grid Style="{StaticResource GridwithAnimals}" MouseDown="TextBlock_MouseDown" MouseUp="TextBlock_MouseUp" Grid.Row="3" Grid.Column="3" >
+            <TextBlock Style="{StaticResource txtBlockStyle}" />
+        </Grid>
+
+        <TextBlock x:Name="txtblockTime" Text="Elapsed time" Grid.Row="4" Grid.ColumnSpan="3" FontSize="30" HorizontalAlignment="Center" VerticalAlignment="Center" MouseDown="TextBlock_MouseDown" />
+        <Button x:Name="btnPlay" Grid.Row="4" Grid.Column="3" Height="40" Width="60" Click="Button_Click" >Start</Button>
     </Grid>
 </Window>
